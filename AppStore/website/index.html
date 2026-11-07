@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Write to Story, suggest a sound, or get help with your private travel journal in sound.">
+  <meta name="theme-color" content="#19231f">
+  <title>Story · Help & Feedback</title>
+  <link rel="stylesheet" href="support.css">
+  <script defer src="support.js"></script>
+</head>
+<body>
+  <header class="site-header"><span class="brand" lang="en">Story<span>.</span></span><nav aria-label="Language"><a href="#en" lang="en">English</a><a href="#zh" lang="zh-Hans">简体中文</a></nav></header>
+  <main>
+    <section class="letter" aria-labelledby="letter-title">
+      <p class="eyebrow" data-copy="eyebrow">A PRIVATE TRAVEL JOURNAL IN SOUND</p>
+      <h1 id="letter-title" data-copy="title">Write to Story</h1>
+      <p class="intro" data-copy="intro">A memory, a place, a small detail. I'd love to hear what stayed with you.</p>
+      <form id="letter-form">
+        <label for="topic" data-copy="topic">What would you like to share?</label>
+        <select id="topic" name="topic"><option value="thought" data-copy="thought">Share a thought</option><option value="sound" data-copy="sound">Suggest a sound</option><option value="problem" data-copy="problem">Report a problem</option></select>
+        <label id="message-label" for="message">What did this sound bring back?</label>
+        <textarea id="message" name="message" rows="5" maxlength="4000" required></textarea>
+        <div id="problem-details" hidden>
+          <label class="include"><input type="checkbox" id="include-details" checked><span data-copy="include">Include details to help me investigate</span></label>
+          <div id="details-fields"><label class="small-label" for="details" data-copy="details">Recording and device details · optional, editable</label><textarea id="details" rows="5" maxlength="2000" spellcheck="false"></textarea></div>
+        </div>
+        <p class="note" data-copy="note">This opens an email draft to zivzhu@gmail.com. You can review it before sending.</p>
+        <button class="compose" type="submit" data-copy="compose">Continue to email <span aria-hidden="true">↗</span></button>
+        <p id="mail-status" class="status" role="status" aria-live="polite"></p>
+        <div class="fallback"><a id="email" href="mailto:zivzhu@gmail.com">zivzhu@gmail.com</a><button type="button" id="copy-email" data-copy="copyEmail">Copy email</button><button type="button" id="copy-message" data-copy="copyMessage">Copy message</button></div>
+      </form>
+    </section>
+    <section class="help" aria-labelledby="help-title">
+      <p class="eyebrow" data-copy="helpEyebrow">A LITTLE HELP</p><h2 id="help-title" tabindex="-1" data-copy="helpTitle">Make yourself at home.</h2>
+      <details><summary data-copy="timerQ">How does the sleep timer work?</summary><p data-copy="timerA">Tap the timer to choose looping, 25, 45 or 60 minutes. Pausing holds the time left; resuming continues the countdown. Changing recordings keeps that time. The last ten seconds fade out gently. Choosing a different duration starts a fresh timer.</p></details>
+      <details><summary data-copy="offlineQ">Can I listen offline and with the screen locked?</summary><p data-copy="offlineA">All six recordings and their scenes are included in Story. Start a recording, then lock your screen. The system playback controls let you pause and resume. Calls or disconnecting headphones may pause playback.</p></details>
+      <details><summary data-copy="layoutQ">Where is the playlist?</summary><p data-copy="layoutA">On a regular iPhone, use the small playlist button in the side column. On Duo's portrait cover, use the lower half of the layout switch. Unfold Duo to choose the full player or a split view. Portrait and tabletop layouts place the playlist below the scene. Tent mode keeps just the listening controls.</p></details>
+      <details><summary data-copy="languageQ">How do I change the language?</summary><p data-copy="languageA">Open Settings to choose English or Simplified Chinese. On Duo, unfold the phone to reach Settings. Help and feedback are also at the bottom of the playlist.</p></details>
+      <details><summary data-copy="issueQ">What should I include in a problem report?</summary><p data-copy="issueA">Tell me what you did, what happened and which recording was playing. Mention whether you used headphones or the speaker, and whether the phone was locked or folded. You can add a screenshot in your email app. If no mail app opens, copy the address and message into your preferred email service.</p></details>
+    </section>
+  </main>
+  <footer><p data-copy="footer">Recorded along the way. Made to listen again.</p><a id="about-link" href="about.html#en" data-copy="about">About Story</a> · <a id="privacy-link" href="privacy.html#en" data-copy="privacy">Privacy policy</a></footer>
+  <noscript><p>For help, email <a href="mailto:zivzhu@gmail.com">zivzhu@gmail.com</a>. 如需帮助，请发送邮件至同一地址。</p></noscript>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ambient" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <title>Bintan, Night Breeze</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#253745"/>
+      <stop offset="1" stop-color="#6c8077"/>
+    </linearGradient>
+    <pattern id="paper" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".53" fill="#182c31" opacity=".16"/>
+    </pattern>
+    <linearGradient id="sea" x2="0" y2="1">
+      <stop stop-color="#364f55"/>
+      <stop offset="1" stop-color="#1e383f"/>
+    </linearGradient>
+    <g id="frond">
+      <path d="M0 0Q25-16 58-8" fill="none" stroke="#516e64" stroke-width="1.7" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M4 -2.1q7 0 12 14q-9 -3 -12 -14z" fill="#34594f"/>
+      <path d="M4 -2.1q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M9 -4.3q7 0 12 13q-9 -3 -12 -13z" fill="#34594f"/>
+      <path d="M9 -4.3q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M14 -6.1q7 0 12 12q-9 -3 -12 -12z" fill="#34594f"/>
+      <path d="M14 -6.1q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M19 -7.6q7 0 12 11q-9 -3 -12 -11z" fill="#34594f"/>
+      <path d="M19 -7.6q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M24 -8.6q7 0 12 10q-9 -3 -12 -10z" fill="#34594f"/>
+      <path d="M24 -8.6q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M29 -9.2q7 0 12 9q-9 -3 -12 -9z" fill="#34594f"/>
+      <path d="M29 -9.2q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M34 -9.5q7 0 12 8q-9 -3 -12 -8z" fill="#34594f"/>
+      <path d="M34 -9.5q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M39 -9.3q7 0 12 8q-9 -3 -12 -8z" fill="#34594f"/>
+      <path d="M39 -9.3q2 -6 8 -10q-1 6 -8 10z" fill="#49685a"/>
+      <path d="M44 -8.7q7 0 12 7q-9 -3 -12 -7z" fill="#34594f"/>
+      <path d="M49 -7.7q7 0 12 6q-9 -3 -12 -6z" fill="#34594f"/>
+    </g>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      :target .fronds { animation: breeze 6.8s ease-in-out -3s infinite alternate; }
+      :target .boat { animation: rocking 5.4s ease-in-out -1s infinite alternate; }
+      :target .glimmer { animation: moon-road 5.8s ease-in-out -4s infinite alternate; }
+    }
+    .boat {transform-origin:393px 366px}
+    @keyframes breeze { from{transform:rotate(-4deg) skewX(-2deg)} to{transform:rotate(4deg) skewX(2deg)} }
+    @keyframes rocking { from{transform:translateY(-1px) rotate(-1deg)} to{transform:translateY(1.6px) rotate(1deg)} }
+    @keyframes moon-road { from{opacity:.45;transform:translateX(-2px)} to{opacity:.95;transform:translateX(2px)} }
+  </style>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <circle cx="55" cy="112" r="1" fill="#e0dbbe" opacity="0.5"/>
+  <circle cx="116" cy="161" r="0.8" fill="#e0dbbe" opacity="0.5"/>
+  <circle cx="268" cy="77" r="1.1" fill="#e0dbbe" opacity="0.58"/>
+  <circle cx="299" cy="121" r="0.9" fill="#e0dbbe" opacity="0.6"/>
+  <circle cx="362" cy="80" r="0.8" fill="#e0dbbe" opacity="0.5"/>
+  <circle cx="466" cy="163" r="1.3" fill="#e0dbbe" opacity="0.7"/>
+  <circle cx="517" cy="89" r="0.8" fill="#e0dbbe" opacity="0.57"/>
+  <circle cx="223" cy="135" r="0.9" fill="#e0dbbe" opacity="0.55"/>
+  <circle cx="393" cy="187" r="30" fill="#dedac0" opacity="0.87"/>
+  <path d="M0 288q54-16 101-11l56-12 48 12 46 1 41 15 55-3 67 6 75-5 65-7 46 2v43H0z" fill="#4f6861"/>
+  <rect x="0" y="301" width="600" height="299" fill="url(#sea)"/>
+  <path d="M4 308h77m69-2h41m233-2h49m74 6h58" fill="none" stroke="#93a095" stroke-width="1" opacity="0.54" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="glimmer">
+    <path d="M377 318h27m-37 7h31m-26 7h43m-63 7h25m7 0h18m-32 8h38m-57 9h34m-22 9h29" fill="none" stroke="#b6bb9c" stroke-width="1.7" opacity="0.64" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M300 322l17-1m-16 6h11m-15 6h13" fill="none" stroke="#eac38b" stroke-width="1.5" opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M281 306l-2 50m17-50-2 40m33-41-2 51m16-49-2 41m16-43-1 46" fill="none" stroke="#263d3d" stroke-width="3" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M280 334l48-19m-33 22 47-23" fill="none" stroke="#415952" stroke-width="1.4" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M280 283l42-10 30 9v24l-72 3z" fill="#59655a"/>
+  <path d="M283 280l26-19 28 1 25 18-38-2-46 9z" fill="#293f40"/>
+  <path d="M310 263l24 2 17 11-30-1z" fill="#52625c"/>
+  <rect x="306" y="287" width="9" height="12" fill="#d9aa6f"/>
+  <rect x="316" y="287" width="1.5" height="13" fill="#475249"/>
+  <path d="M273 309l89-5 6 3-90 8z" fill="#354b46"/>
+  <path d="M359 306l46-9m-39 14 41-8m-22-2v24m20-28v20" fill="none" stroke="#354d48" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="boat">
+    <path d="M367 365q24 5 51-4-5 12-25 13-16 0-26-9z" fill="#233c3e"/>
+    <path d="M369 365q23 4 46-3m-18 3 4-8" fill="none" stroke="#829180" stroke-width="1.3" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M368 366q-14 0-15-16" fill="none" stroke="#677c70" stroke-width="0.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M175 347l48-1m-65 16h32m54 11 31-1m154-33h33m28 21h37m-316 41 34-2m137 13 42-1" fill="none" stroke="#6e887b" stroke-width="1.2" opacity="0.62" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M103 413Q161 340 200 213l3 1q-19 104-81 209z" fill="#28483f"/>
+  <g transform="translate(201 214) scale(1.25)">
+    <g class="fronds">
+      <g transform="rotate(-146) scale(0.91)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(-107) scale(0.91)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(-59) scale(1.1)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(-27) scale(1.14)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(8) scale(1.12)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(37) scale(1.03)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(69) scale(0.91)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(127) scale(0.94)">
+        <use href="#frond"/>
+      </g>
+      <g transform="rotate(170) scale(1.04)">
+        <use href="#frond"/>
+      </g>
+    </g>
+  </g>
+  <path d="M0 382q40 3 81 18l55 12 58 23 49 9 56 33 53 26 67 30 50 67H0Z" fill="#293e39"/>
+  <path d="M0 409q67 0 127 20l75 28 57 31 45 27 44 11L390 600H0z" fill="#263732"/>
+  <rect width="600" height="600" fill="url(#paper)"/>
+</svg>

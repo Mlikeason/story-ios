@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ambient" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <title>Tokyo, First Light</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#99aea3"/>
+      <stop offset="1" stop-color="#edcfab"/>
+    </linearGradient>
+    <pattern id="paper" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".53" fill="#485447" opacity=".16"/>
+    </pattern>
+    <linearGradient id="street" x2="0" y2="1">
+      <stop stop-color="#c5b59b"/>
+      <stop offset="1" stop-color="#83948a"/>
+    </linearGradient>
+    <g id="pot">
+      <path d="M-6 0H6L4 9h-8z" fill="#9d7d64"/>
+      <path d="M0 0q-9-4-9-12 8 3 9 9-1-10 5-16 2 9-3 16 4-8 10-8-2 8-10 12z" fill="#69806a"/>
+    </g>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      :target .noren { animation: cloth 7s ease-in-out -2s infinite alternate; }
+      :target .first-light { animation: sun 22s ease-in-out -9s infinite alternate; }
+    }
+    @keyframes cloth { from{transform:skewX(-2deg) scaleY(.98)} to{transform:skewX(6deg) scaleY(1.03)} }
+    @keyframes sun { from{opacity:.52;transform:translateX(-6px)} to{opacity:.95;transform:translateX(6px)} }
+  </style>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <circle cx="350" cy="198" r="31" fill="#f2d7a6" opacity="0.9"/>
+  <path d="M224 260v-16h29v-17h36v27h16v-32h21v32h22v-18h24v21h36v64H224z" fill="#9aa694"/>
+  <rect x="0" y="291" width="600" height="309" fill="url(#street)"/>
+  <g class="first-light">
+    <path d="M316 299l29 6-70 60-90 18-52 46-80 15 140-100 48-5z" fill="#e8cda0"/>
+  </g>
+  <path d="M305 302L7 477m335-175 255 133m-548 54 167-11M217 374l91-6" fill="none" stroke="#7d8c7e" stroke-width="1.1" opacity="0.52" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M-3 123l122 22 62 46 57 29 25 31v79L0 463z" fill="#62756e"/>
+  <path d="M0 142l121 22 5 197L0 435z" fill="#728274"/>
+  <path d="M124 175l56 26 4 134-58 25z" fill="#979783"/>
+  <path d="M185 213l47 20 3 82-50 19z" fill="#868b79"/>
+  <path d="M0 133l126 26 7 12L0 147zM123 163l64 32 6 10-66-27zM179 198l66 32 4 7-61-24z" fill="#505e58"/>
+  <path d="M13 190l72 14v49l-72-8z" fill="#4e6159"/>
+  <path d="M30 194v52m24-49v51m25-45v47m-65-37 69 11" fill="none" stroke="#a8a590" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M130 235l39 10v87l-38 19z" fill="#56665d"/>
+  <path d="M141 242v98m9-94v90m9-91v86" fill="none" stroke="#798374" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M600 90l-85 41-49 43-43 26-34 21-31 23-25 18v48l267 146z" fill="#ac9c83"/>
+  <path d="M600 118l-86 32-2 220 88 59z" fill="#a3937c"/>
+  <path d="M513 150l-57 30-1 154 57 36z" fill="#bbab8e"/>
+  <path d="M444 189l-42 22v95l42 23z" fill="#968e77"/>
+  <path d="M601 110l-95 36-12 11 107-32zM510 145l-64 30-6 12 64-32zM443 185l-51 27-4 7 52-24z" fill="#777d6c"/>
+  <path d="M531 208l42-10v44l-43 4zm-67 13 24-7v31l-24 4z" fill="#64796c"/>
+  <path d="M550 205v39m-17-18 39-7m-96 0v27" fill="none" stroke="#ada991" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(131 238)">
+    <g class="noren">
+      <path d="M0 0l34 5v16l-8-1 .2-13-1.5 13-9-1 0-13-1 13-13-2z" fill="#977c68"/>
+      <path d="M3 2l28 4" fill="none" stroke="#b99f80" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <path d="M204 325l-2-145m-10 4 25-4m-22 4v-4m13 3v-6m181 128 2-95m-8 2 21-5" fill="none" stroke="#63756c" stroke-width="2.3" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M-8 95q111 96 202 88 104 33 197 27 99-19 218-112M-2 115q96 80 207 74 102 36 193 27 96-20 217-96M205 184q58 51 113 45m77-20q32-28 44-66" fill="none" stroke="#536759" stroke-width="1.15" opacity="0.76" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(188 342) rotate(-6)">
+    <g fill="none" stroke="#485e56" stroke-width="1.7">
+      <ellipse cx="-15" cy="0" rx="12" ry="12" fill="none" opacity="1"/>
+      <ellipse cx="14" cy="0" rx="12" ry="12" fill="none" opacity="1"/>
+    </g>
+    <path d="M-15 0l8-17 10 17h-18l18-13 11 13-5-22 5-2m-22 6-2-5m-4 0h10" fill="none" stroke="#415b52" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <use href="#pot" transform="translate(148 353) scale(1 1)"/>
+  <use href="#pot" transform="translate(159 347) scale(0.69 0.69)"/>
+  <use href="#pot" transform="translate(451 338) scale(0.89 0.89)"/>
+  <path d="M512 185v155l7 5m-109-122v76M82 330l25-9" fill="none" stroke="#707d6e" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M388 362l28 5-14 6-27-5z" fill="#7a8276"/>
+  <path d="M387 364l20 3m-23-1 20 3" fill="none" stroke="#b6b39a" stroke-width="1" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="600" height="600" fill="url(#paper)"/>
+</svg>

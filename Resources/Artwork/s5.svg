@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8ba89e"/><stop offset="1" stop-color="#b3c2b5"/>
+    </linearGradient>
+    <linearGradient id="paving" x2=".25" y2="1">
+      <stop stop-color="#84968a"/><stop offset=".58" stop-color="#647e72"/><stop offset="1" stop-color="#334f47"/>
+    </linearGradient>
+    <pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".55" fill="#192b25" opacity=".17"/>
+    </pattern>
+    <pattern id="bricks" width="28" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 0h28M0 6h28M8 0v6m14 0v6" fill="none" stroke="#cad0bb" stroke-opacity=".18" stroke-width=".7"/>
+    </pattern>
+    <pattern id="tiles" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M3 -2L1 6" stroke="#a7b6a4" stroke-width="1.4" opacity=".5"/>
+    </pattern>
+    <clipPath id="gate"><circle cx="229" cy="299" r="51"/></clipPath>
+    <g id="wall">
+      <path fill-rule="evenodd" d="M0 240h600v114H0z M280 299a51 51 0 1 0-102 0 51 51 0 1 0 102 0z"/>
+    </g>
+  </defs>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <circle cx="393" cy="195" r="42" fill="#f6e7bd" opacity="0.38"/>
+
+  <g transform="translate(0 8)">
+  <!-- Through the moon gate: a second courtyard, in the shade. -->
+  <g clip-path="url(#gate)">
+    <rect x="175" y="246" width="108" height="107" fill="#99aa98"/>
+    <path d="M171 273h102l10 8H171z" fill="#647e71"/>
+    <path d="M171 281h112v45H171z" fill="#7d9281"/>
+    <path d="M193 283h24v43h-24z" fill="#526d61"/>
+    <path d="M206 285v40" stroke="#869a85"/>
+    <path d="M174 326h109v28H174z" fill="#b0b59a"/>
+    <path d="M173 337l73-11h35v4l-69 17z" fill="#829483"/>
+    <path d="M252 327q-2-29 9-56m-8 36l-11-15m13 4l14-10" fill="none" stroke="#556e60" stroke-width="2"/>
+    <path d="M243 296q-9-2-11-10 9 0 11 10m1-9q-9-3-11-12 9 2 11 12m13-5q-5-7-3-14 6 3 3 14m3-7q1-10 10-13-1 8-10 13m3 15q3-9 13-10-3 7-13 10" fill="#647e69"/>
+  </g>
+  <use href="#wall" fill="#82968a"/>
+  <use href="#wall" fill="url(#bricks)"/>
+  <path d="M0 241h600v7l-600 9z" fill="#526e62" opacity=".38"/>
+  <path d="M0 234h600v7H0z" fill="#526b60"/>
+  <path d="M0 232h600v5H0z" fill="url(#tiles)"/>
+  <path d="M0 231.5h600" stroke="#bfbea4" stroke-width="1.4"/>
+  <circle cx="229" cy="299" r="53.5" fill="none" stroke="#637d70" stroke-width="5"/>
+  <path d="M177.5 299a51.5 51.5 0 0 1 73-47" fill="none" stroke="#bcc1a8" stroke-width="1.5"/>
+  <path d="M0 347h177v7H0zm278 0h322v7H278z" fill="#667f72"/>
+  <!-- A low, warm bench above the damp paving; its shadow stretches to the left. -->
+  <path d="M0 354h600v246H0z" fill="url(#paving)"/>
+  <g fill="none" stroke="#536f63" stroke-width="1" opacity=".46">
+    <path d="M0 364h600M0 386h600M0 425h600M0 497h600"/>
+    <path d="M102 354l-18 10m-37 22L0 413m191-59l-7 10m-16 22l-29 39m-53 72L9 600m285-246l1 10m1 22l4 39m6 72l9 103m81-246l9 10m19 22l34 39m62 72l80 94m-72-237l15 10m33 22l24 16"/>
+  </g>
+  <g fill="#d1ceb0" opacity=".36">
+    <path d="M306 361q34-4 88-3l-19 3-42 1zM301 369q30-3 57-2l-11 2-23 1z"/>
+    <path d="M119 396q45-5 79-3l-15 3-42 2zM244 415q26-2 53-1l-14 2h-44z"/>
+    <path d="M409 389q31-3 59-2l-9 2-34 2zM387 398h24l-10 1h-24z"/>
+  </g>
+  <path d="M319 360l66 0-93 37-85 3 92-33-28 1z" fill="#49665b" opacity=".49"/>
+  <g stroke="#475f54" stroke-width="3.8" fill="none">
+    <path d="M322 329v30m63-30v30M321 344l-4 17m67-17l-4 17"/>
+  </g>
+  <g fill="#927e62">
+    <path d="M315 329h78v4h-78zM315 335h78v3.5h-78z"/>
+    <path d="M316 342h78l-4 3h-79z" fill="#b19a77"/>
+    <path d="M311 345h79v3h-79z" fill="#6c6a53"/>
+  </g>
+
+  <style>
+    .drop, .ripple { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      #ambient:target .drop { animation: fall var(--cycle) linear var(--offset) infinite; }
+      #ambient:target .ripple { animation: land var(--cycle) ease-out var(--offset) infinite; }
+    }
+    @keyframes fall {
+      0% { transform: translateY(var(--start)); opacity: 0; }
+      13% { opacity: .52; }
+      67% { transform: translateY(0); opacity: .52; }
+      68%, 100% { transform: translateY(0); opacity: 0; }
+    }
+    @keyframes land {
+      0%, 66% { transform: scale(.18); opacity: 0; }
+      69% { opacity: .57; }
+      97%, 100% { transform: scale(1); opacity: 0; }
+    }
+  </style>
+  <g id="ambient" fill="none" stroke="#e2e6d3" stroke-linecap="round">
+    <g transform="translate(44 378)" style="--start:-180px; --cycle:4.9s; --offset:-2.1s">
+      <path class="drop" d="M0 -7V0" stroke-width="1.25"/><ellipse class="ripple" rx="6" ry="1.6"/>
+    </g>
+    <g transform="translate(104 397)" style="--start:-226px; --cycle:5.5s; --offset:-0.3s">
+      <path class="drop" d="M0 -8V0" stroke-width="1.25"/><ellipse class="ripple" rx="7" ry="1.6"/>
+    </g>
+    <g transform="translate(147 365)" style="--start:-157px; --cycle:4.7s; --offset:-3.6s">
+      <path class="drop" d="M0 -9V0" stroke-width="1.25"/><ellipse class="ripple" rx="8" ry="1.6"/>
+    </g>
+    <g transform="translate(178 403)" style="--start:-214px; --cycle:5.3s; --offset:-1.7s">
+      <path class="drop" d="M0 -10V0" stroke-width="1.25"/><ellipse class="ripple" rx="9" ry="1.6"/>
+    </g>
+    <g transform="translate(205 372)" style="--start:-167px; --cycle:5.8s; --offset:-4.3s">
+      <path class="drop" d="M0 -7V0" stroke-width="1.25"/><ellipse class="ripple" rx="6" ry="1.6"/>
+    </g>
+    <g transform="translate(239 394)" style="--start:-237px; --cycle:5.1s; --offset:-0.7s">
+      <path class="drop" d="M0 -8V0" stroke-width="1.25"/><ellipse class="ripple" rx="7" ry="1.6"/>
+    </g>
+    <g transform="translate(270 361)" style="--start:-153px; --cycle:4.8s; --offset:-2.7s">
+      <path class="drop" d="M0 -9V0" stroke-width="1.25"/><ellipse class="ripple" rx="8" ry="1.6"/>
+    </g>
+    <g transform="translate(294 412)" style="--start:-209px; --cycle:5.6s; --offset:-4.8s">
+      <path class="drop" d="M0 -10V0" stroke-width="1.25"/><ellipse class="ripple" rx="9" ry="1.6"/>
+    </g>
+    <g transform="translate(326 380)" style="--start:-180px; --cycle:5.3s; --offset:-2.1s">
+      <path class="drop" d="M0 -7V0" stroke-width="1.25"/><ellipse class="ripple" rx="6" ry="1.6"/>
+    </g>
+    <g transform="translate(359 406)" style="--start:-195px; --cycle:5.1s; --offset:-3.8s">
+      <path class="drop" d="M0 -8V0" stroke-width="1.25"/><ellipse class="ripple" rx="7" ry="1.6"/>
+    </g>
+    <g transform="translate(386 370)" style="--start:-193px; --cycle:5.7s; --offset:-0.4s">
+      <path class="drop" d="M0 -9V0" stroke-width="1.25"/><ellipse class="ripple" rx="8" ry="1.6"/>
+    </g>
+    <g transform="translate(424 387)" style="--start:-222px; --cycle:4.9s; --offset:-3.3s">
+      <path class="drop" d="M0 -10V0" stroke-width="1.25"/><ellipse class="ripple" rx="9" ry="1.6"/>
+    </g>
+    <g transform="translate(465 361)" style="--start:-163px; --cycle:5.4s; --offset:-1.2s">
+      <path class="drop" d="M0 -7V0" stroke-width="1.25"/><ellipse class="ripple" rx="6" ry="1.6"/>
+    </g>
+    <g transform="translate(506 421)" style="--start:-216px; --cycle:5.7s; --offset:-3.9s">
+      <path class="drop" d="M0 -8V0" stroke-width="1.25"/><ellipse class="ripple" rx="7" ry="1.6"/>
+    </g>
+    <g transform="translate(558 379)" style="--start:-204px; --cycle:5.2s; --offset:-2.2s">
+      <path class="drop" d="M0 -9V0" stroke-width="1.25"/><ellipse class="ripple" rx="8" ry="1.6"/>
+    </g>
+  </g>
+  </g>
+  <rect width="600" height="600" fill="url(#grain)"/>
+</svg>

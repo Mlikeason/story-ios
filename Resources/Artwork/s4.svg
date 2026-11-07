@@ -1,0 +1,48 @@
+<svg id="ambient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x2="0" y2="1" gradientUnits="objectBoundingBox" gradientTransform="scale(1 1)"><stop stop-color="#b78e74"/><stop offset="1" stop-color="#d5ae8b"/></linearGradient><pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".55" fill="#192b25" opacity=".17"/></pattern></defs>
+<rect width="600" height="600" fill="url(#sky)"/>
+<circle cx="393" cy="195" r="42" fill="#f6e7bd" opacity="0.76"/>
+<style>
+  .moving-ridges { display: none; }
+  @media (prefers-reduced-motion: no-preference) {
+    :target .still-ridges { display: none; }
+    :target .moving-ridges { display: inline; }
+  }
+</style>
+<g class="still-ridges">
+<path d="M-20 352 Q55 308 107 315 T234 287 T380 298 Q475 315 620 246 L620 610H-20Z" fill="#855c46" opacity="0.57"/>
+<path d="M-20 375 Q62 325 160 353 T333 342 Q467 293 620 313 L620 610H-20Z" fill="#855c46" opacity="1"/>
+<path d="M-20 443 Q72 386 174 408 T365 388 Q487 346 620 372 L620 610H-20Z" fill="#432d24" opacity="0.86"/>
+<path d="M-20 473 Q110 461 234 409 T500 407 L620 390 L620 610H-20Z" fill="#432d24" opacity="1"/>
+</g>
+<g class="moving-ridges">
+  <path d="M-20 352 Q55 308 107 315 T234 287 T380 298 Q475 315 620 246 L620 610H-20Z" fill="#855c46" opacity="0.57">
+    <animate attributeName="d" dur="19s" begin="-4s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"
+             values="M-20 352 Q55 308 107 315 T234 287 T380 298 Q475 315 620 246 L620 610H-20Z;M-20 345 Q60 297 117 323 T238 301 T384 281 Q478 301 620 253 L620 610H-20Z;M-20 352 Q55 308 107 315 T234 287 T380 298 Q475 315 620 246 L620 610H-20Z"/>
+  </path>
+  <path d="M-20 375 Q62 325 160 353 T333 342 Q467 293 620 313 L620 610H-20Z" fill="#855c46" opacity="1">
+    <animate attributeName="d" dur="23s" begin="-13s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"
+             values="M-20 375 Q62 325 160 353 T333 342 Q467 293 620 313 L620 610H-20Z;M-20 380 Q68 340 154 344 T328 351 Q473 306 620 302 L620 610H-20Z;M-20 375 Q62 325 160 353 T333 342 Q467 293 620 313 L620 610H-20Z"/>
+  </path>
+  <path d="M-20 443 Q72 386 174 408 T365 388 Q487 346 620 372 L620 610H-20Z" fill="#432d24" opacity="0.86">
+    <animate attributeName="d" dur="21s" begin="-2s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"
+             values="M-20 443 Q72 386 174 408 T365 388 Q487 346 620 372 L620 610H-20Z;M-20 439 Q70 399 178 400 T360 398 Q490 331 620 382 L620 610H-20Z;M-20 443 Q72 386 174 408 T365 388 Q487 346 620 372 L620 610H-20Z"/>
+  </path>
+  <path d="M-20 473 Q110 461 234 409 T500 407 L620 390 L620 610H-20Z" fill="#432d24" opacity="1">
+    <animate attributeName="d" dur="27s" begin="-9s" repeatCount="indefinite"
+             calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1"
+             values="M-20 473 Q110 461 234 409 T500 407 L620 390 L620 610H-20Z;M-20 478 Q108 447 230 418 T504 397 L620 397 L620 610H-20Z;M-20 473 Q110 461 234 409 T500 407 L620 390 L620 610H-20Z"/>
+  </path>
+</g>
+<path d="M-20 495 Q125 463 227 439 T557 402" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 503 Q125 472 227 447 T557 411" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 511 Q125 481 227 455 T557 420" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 519 Q125 490 227 463 T557 429" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 527 Q125 499 227 471 T557 438" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 535 Q125 508 227 479 T557 447" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 543 Q125 517 227 487 T557 456" fill="none" stroke="#b78e74" opacity=".32"/>
+<path d="M-20 551 Q125 526 227 495 T557 465" fill="none" stroke="#b78e74" opacity=".32"/>
+<rect width="600" height="600" fill="url(#grain)"/></svg>

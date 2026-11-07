@@ -25,3 +25,10 @@ Package.resolved
 
 # CocoaPods (in case you add it later)
 Pods/
+
+# Local Sites checkout; the publishable source is in AppStore/website.
+/SupportSite/
+# Generated comparison audio and duplicate store exports.
+/AudioMasters/Comparison/
+/Story-App-Store/
+/Story-App-Store-kit.zip

@@ -1,26 +1,10 @@
-<!--
-Paste these keys into your project's Info.plist (or set them in Target → Info).
-In Xcode 15+ the Info.plist may be hidden under "Build Settings → Info.plist values"
-or under the target's "Info" tab — both work.
--->
-
-<!-- Hide the status bar entirely (the web app already has its own top spacing) -->
-<key>UIStatusBarHidden</key>
-<true/>
-<key>UIViewControllerBasedStatusBarAppearance</key>
-<false/>
-
-<!-- Lock the app to portrait, full-screen (no Stage Manager split) -->
-<key>UIRequiresFullScreen</key>
-<true/>
+<!-- The checked-in Story target uses Info.plist. For existing Xcode targets,
+     remove a legacy UIRequiresFullScreen flag and copy these values. -->
 <key>UISupportedInterfaceOrientations</key>
 <array>
-    <string>UIInterfaceOrientationPortrait</string>
+  <string>UIInterfaceOrientationPortrait</string>
+  <string>UIInterfaceOrientationLandscapeLeft</string>
+  <string>UIInterfaceOrientationLandscapeRight</string>
 </array>
-
-<!-- Allow audio playback to continue when the phone locks or another app is in the foreground.
-     If you DON'T want background audio, delete this whole entry. -->
 <key>UIBackgroundModes</key>
-<array>
-    <string>audio</string>
-</array>
+<array><string>audio</string></array>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ambient" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <title>Hawaiian Surf</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#8caa9f"/>
+      <stop offset="1" stop-color="#d5c8a0"/>
+    </linearGradient>
+    <pattern id="paper" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".53" fill="#314d47" opacity=".16"/>
+    </pattern>
+    <linearGradient id="water" x2="0" y2="1">
+      <stop stop-color="#699b91"/>
+      <stop offset="1" stop-color="#39756e"/>
+    </linearGradient>
+    <linearGradient id="sand" x2="0" y2="1">
+      <stop stop-color="#c6b294"/>
+      <stop offset="1" stop-color="#8e806a"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      :target .swell { animation: swell 9s ease-in-out -2s infinite alternate; }
+      :target .wash { animation: wash 7s ease-in-out -3s infinite alternate; }
+      :target .near-water { animation: glide 8s ease-in-out -6s infinite alternate; }
+    }
+    .swell { transform-origin: 300px 312px; }
+    @keyframes swell { from {transform:translate(-6px,3px) scaleY(.87)} to {transform:translate(8px,-3px) scaleY(1.10)} }
+    @keyframes wash { from {transform:translate(-3px,-4px)} to {transform:translate(3px,6px)} }
+    @keyframes glide { from {transform:translateX(-6px)} to {transform:translateX(6px)} }
+  </style>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <circle cx="401" cy="174" r="38" fill="#f5e3b4" opacity="0.69"/>
+  <path d="M0 235l48-19 29 1 19-8 36 6 19 9 32 3 26 12H0z" fill="#719387"/>
+  <rect x="0" y="238" width="600" height="362" fill="url(#water)"/>
+  <path d="M191 240h85m95 2h69m-425 9h36m271 0h45" fill="none" stroke="#dae0bc" stroke-width="1" opacity="0.48" stroke-linecap="round" stroke-linejoin="round"/>
+  <g class="swell">
+    <path d="M-28 304Q42 274 94 281T202 270Q257 238 289 235C317 229 334 235 343 249Q313 239 304 259C296 286 348 293 398 279Q462 260 510 272T632 253V470H-28Z" fill="#44847d"/>
+    <path d="M-25 300Q45 271 98 278T200 266C238 251 270 218 307 226Q330 227 343 249Q318 236 302 248Q282 265 272 271Q289 250 279 246C254 253 226 281 193 282C145 284 121 282 97 285T-25 310Z" fill="#e4e0c6"/>
+    <path d="M178 290q35 1 68-24m64-13q-7 12 3 18m3-31 13 2m-47-13 16-3" fill="none" stroke="#a4c4af" stroke-width="2" opacity="0.64" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-5 321q45-21 91-17m118-13q31-6 53-25m88 24q33 3 56-5m75-2 38 1" fill="none" stroke="#81ada0" stroke-width="2" opacity="0.67" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g class="near-water">
+    <path d="M-25 343q75-8 154 8t158 4q73-3 124-14t112-2l105 13v38q-94-22-192-3t-172 14q-142-22-289 2z" fill="#87afa0"/>
+  </g>
+  <g class="wash">
+    <path d="M-24 385Q65 371 135 388T271 405Q358 407 411 383T625 372V610H-24Z" fill="url(#sand)"/>
+    <path d="M-24 383Q61 369 134 386T272 403Q362 404 411 380T625 369l-1 7q-118-8-211 18t-147 17q-70-2-133-19t-157-3z" fill="#dadbc2"/>
+    <path d="M-7 398q58-9 117 1m260-2q37-10 67-19m39-6q30-3 50-1" fill="none" stroke="#edf0d7" stroke-width="1.6" opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M0 317l24-9 17 1 7 8 23 1 10 5-81 9zM398 414l21-11 20-1 14 9-5 6-43 2zM466 421l13-5 11 3 1 3-24 3z" fill="#4f6359"/>
+  <path d="M402 411l18-6 13 1m32 17 12-4" fill="none" stroke="#a2a68a" stroke-width="1.6" opacity="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43 443q49-11 89 0m123 26q35 2 57-5m74-17 29-6" fill="none" stroke="#e1c9a4" stroke-width="1.1" opacity="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="600" height="600" fill="url(#paper)"/>
+</svg>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>备用声景 · Story.</title>
+<style>
+:root { color-scheme:dark; font:16px/1.45 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif; color:#f2ecdb; background:#17201e }
+* { box-sizing:border-box }
+body { margin:0; padding:clamp(18px,3.5vw,52px); max-width:1600px; margin-inline:auto }
+header,.tools,.dialog-bar,.controls,.caption { display:flex; align-items:center; gap:12px }
+header { justify-content:space-between; flex-wrap:wrap; margin-bottom:24px }
+h1,h2,p { margin:0 }
+h1,h2 { font-size:clamp(17px,2vw,22px); font-weight:530 }
+.brand { font:italic bold 36px/.95 Georgia,serif; letter-spacing:-.09em; color:#fff9e9 }
+.brand i { color:#ecd79f }
+header h1 { border-left:1px solid #687567; padding-left:16px; margin-left:5px }
+button { font:inherit; color:inherit; cursor:pointer; background:transparent; border:0 }
+button:focus-visible { outline:2px solid #dfc68f; outline-offset:3px }
+.action { border:1px solid #576458; border-radius:100px; padding:8px 16px; font-size:14px; min-height:42px }
+.action[aria-pressed=true] { color:#1e2c25; background:#d5d7bd; border-color:transparent }
+button:disabled { cursor:default; opacity:.65 }
+main { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:22px 16px }
+.card { display:block; padding:0; width:100%; text-align:left; background:#202d27; border-radius:9px; overflow:hidden }
+.card img { display:block; width:100%; aspect-ratio:1.14; object-fit:cover; object-position:center 36% }
+.caption { padding:12px 14px 14px; align-items:flex-start }
+.index { font:11px/1.65 ui-monospace,Menlo,monospace; letter-spacing:.12em; color:#c2b48e }
+.name { display:block; font-size:15px; font-weight:550 }
+.en { display:block; color:#c1c6b6; font:italic 14px/1.5 Georgia,serif }
+.note { margin-top:22px; color:#aeb8a9; font-size:13px }
+dialog { width:min(94vw,850px); max-height:96dvh; overflow:auto; padding:clamp(13px,2vw,24px); border:1px solid #4e5c50; border-radius:14px; color:inherit; background:#19241f }
+dialog::backdrop { background:#080f0ddc }
+.dialog-bar { justify-content:space-between; margin-bottom:13px }
+.frame { --ratio:1; --height:min(57vh,580px); width:min(100%,calc(var(--height) * var(--ratio))); aspect-ratio:var(--ratio); margin:auto; overflow:hidden; border-radius:5px }
+.frame img { width:100%; height:100%; object-fit:cover; object-position:center 36%; display:block }
+.controls { margin:14px 0 8px; justify-content:center; flex-wrap:wrap; gap:6px }
+.controls .action { padding:6px 12px }
+.description { text-align:center; font-size:14px; color:#d1d5c4 }
+@media(max-width:1000px) { main { grid-template-columns:repeat(2,minmax(0,1fr)) } }
+@media(max-width:490px) { main { gap:12px 8px } .caption { padding:9px 8px; gap:5px } .name {font-size:13px} .en,.index {font-size:10px} header h1 {font-size:16px;padding-left:9px} .brand{font-size:30px} header { gap:8px } }
+</style>
+</head>
+<body>
+<header><div class="tools"><span class="brand" lang="en">Story<i>.</i></span><h1>备用声景</h1></div><button class="action" id="motion">暂停动效</button></header>
+<main aria-label="八幅动态插画"></main>
+<p class="note">点选画面，可单独欣赏并切换方形、手机竖屏或帐篷横屏。</p>
+<dialog aria-labelledby="scene-title">
+  <div class="dialog-bar"><div><h2 id="scene-title"></h2><span class="en" lang="en" id="scene-en"></span></div><button class="action" id="close">关闭</button></div>
+  <div class="frame"><img id="detail" alt=""></div>
+  <div class="controls" aria-label="预览画幅">
+    <button class="action" data-ratio="1" aria-pressed="true">原画</button>
+    <button class="action" data-ratio=".46" aria-pressed="false">手机竖屏</button>
+    <button class="action" data-ratio="1.455" aria-pressed="false">帐篷横屏</button>
+  </div>
+  <p class="description"></p>
+</dialog>
+<script>
+const scenes = [
+  ['01-hawaii-surf', '夏威夷海浪', 'Hawaiian Surf', '浪峰向前翻卷，近岸的白沫在沙滩上缓缓进退。'],
+  ['02-bangkok-night-market', '曼谷夜市', 'Bangkok Night Market', '棚下的锅沿浮起几缕蒸汽，巷子上方的一串灯泡泛着暖光。'],
+  ['03-bintan-night-breeze', '民丹岛夜晚海风', 'Bintan, Night Breeze', '棕榈叶被风轻轻托起，高脚渔屋旁的小船随着月光倒影微微晃动。'],
+  ['04-hokkaido-evening-snow', '北海道傍晚风雪', 'Hokkaido, Snow at Dusk', '不同远近的雪斜掠过站舍，积雪遮住了通往暖窗的铁轨。'],
+  ['05-tokyo-morning-lane', '东京小巷清晨', 'Tokyo, First Light', '门口的暖帘轻摆，第一束日光顺着空巷缓慢挪动。'],
+  ['06-hawaii-midnight-observatory', '夏威夷天文台半夜', 'Hawaiʻi, Midnight Observatory', '山脊上方的星野悄然转动，圆顶的观测缝缓缓跟随。'],
+  ['07-iceland-puffin-colony', '冰岛海鹦群', 'Iceland, Puffin Colony', '崖边的海鹦偶尔转头，一小群同伴低低掠过海面。'],
+  ['08-italy-before-the-overture', '意大利歌剧院 · 开场前', 'Italy, Before the Overture', '丝绒幕仍垂着。两侧包厢的灯渐暗，舞台脚灯慢慢亮起。']
+];
+const gallery = document.querySelector('main');
+const dialog = document.querySelector('dialog');
+const detail = document.querySelector('#detail');
+const motion = document.querySelector('#motion');
+const preference = matchMedia('(prefers-reduced-motion: reduce)');
+let paused = false;
+let current = 0;
+const cards = scenes.map(([file, zh, en], index) => {
+  const button = document.createElement('button');
+  button.className = 'card';
+  button.innerHTML = '<img alt=""><span class="caption"><span class="index"></span><span><span class="name"></span><span lang="en" class="en"></span></span></span>';
+  button.querySelector('.index').textContent = String(index + 1).padStart(2,'0');
+  button.querySelector('.name').textContent = zh;
+  button.querySelector('.en').textContent = en;
+  button.addEventListener('click', () => {
+    current = index;
+    document.querySelector('#scene-title').textContent = zh;
+    document.querySelector('#scene-en').textContent = en;
+    document.querySelector('.description').textContent = scenes[index][3];
+    dialog.showModal();
+    refresh();
+  });
+  gallery.append(button);
+  return button.querySelector('img');
+});
+function refresh() {
+  const animate = !paused && !preference.matches && !document.hidden;
+  cards.forEach((img, i) => {
+    const src = scenes[i][0] + '.svg' + (animate && !dialog.open ? '#ambient' : '');
+    if (img.getAttribute('src') !== src) img.src = src;
+  });
+  if (dialog.open) detail.src = scenes[current][0] + '.svg' + (animate ? '#ambient' : '');
+  else detail.removeAttribute('src');
+  motion.disabled = preference.matches;
+  motion.textContent = preference.matches ? '已减弱动态效果' : paused ? '播放动效' : '暂停动效';
+}
+motion.onclick = () => { paused = !paused; refresh(); };
+document.querySelector('#close').onclick = () => dialog.close();
+dialog.addEventListener('close', refresh);
+for (const button of document.querySelectorAll('[data-ratio]')) {
+  button.onclick = () => {
+    document.querySelector('.frame').style.setProperty('--ratio', button.dataset.ratio);
+    document.querySelectorAll('[data-ratio]').forEach(b => b.setAttribute('aria-pressed', String(b === button)));
+  };
+}
+preference.addEventListener('change', refresh);
+document.addEventListener('visibilitychange', refresh);
+refresh();
+</script>
+</body></html>

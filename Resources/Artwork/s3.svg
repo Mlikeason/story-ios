@@ -1,0 +1,45 @@
+<svg id="ambient" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="sky" x2="0" y2="1" gradientUnits="objectBoundingBox" gradientTransform="scale(1 1)"><stop stop-color="#ac9274"/><stop offset="1" stop-color="#bda989"/></linearGradient><pattern id="grain" width="4" height="4" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".55" fill="#192b25" opacity=".17"/></pattern><clipPath id="glass"><path d="M0 0h600v384H0z"/></clipPath>
+<clipPath id="floor"><path d="M-20 409L620 370V610H-20z"/></clipPath></defs>
+<rect width="600" height="600" fill="url(#sky)"/>
+<circle cx="393" cy="195" r="42" fill="#f6e7bd" opacity="0.76"/>
+<style>
+  .glass-shadow { transform-origin: 0 127px; transform: skewX(-5deg); }
+  .sun-panes { transform-origin: 0 388px; transform: skewX(-28deg); }
+  @media (prefers-reduced-motion: no-preference) {
+    :target .glass-shadow { animation: glass-angle 30s ease-in-out -7s infinite alternate; }
+    :target .sun-panes { animation: floor-angle 30s ease-in-out -7s infinite alternate; }
+  }
+  @keyframes glass-angle { from { transform: skewX(-2deg); } to { transform: skewX(-12deg); } }
+  @keyframes floor-angle { from { transform: skewX(-14deg); } to { transform: skewX(-43deg); } }
+</style>
+<g clip-path="url(#glass)"><g class="glass-shadow">
+<path d="M-98 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+<path d="M17 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+<path d="M132 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+<path d="M247 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+<path d="M362 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+<path d="M477 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+<path d="M592 0h20v390h-20z" fill="#312e28" opacity=".19"/>
+</g></g>
+<rect x="-110" y="0" width="12" height="395" fill="#665d4d"/>
+<rect x="5" y="0" width="12" height="395" fill="#665d4d"/>
+<rect x="120" y="0" width="12" height="395" fill="#665d4d"/>
+<rect x="235" y="0" width="12" height="395" fill="#665d4d"/>
+<rect x="350" y="0" width="12" height="395" fill="#665d4d"/>
+<rect x="465" y="0" width="12" height="395" fill="#665d4d"/>
+<rect x="580" y="0" width="12" height="395" fill="#665d4d"/>
+<rect y="127" width="600" height="10" fill="#665d4d"/>
+<rect y="348" width="600" height="10" fill="#665d4d"/>
+<rect y="383" width="600" height="10" fill="#665d4d"/>
+<path d="M-20 409 L620 370 L620 610H-20Z" fill="#665d4d" opacity="1"/>
+<g clip-path="url(#floor)"><g class="sun-panes" fill="#ecd59f" opacity=".36">
+  <path d="M-96 381h94v37h-94z M19 381h94v37H19z M134 381h94v37h-94z M249 381h94v37h-94z M364 381h94v37h-94z M479 381h94v37h-94z M594 381h94v37h-94z"/>
+  <path d="M-96 423h94v38h-94z M19 423h94v38H19z M134 423h94v38h-94z M249 423h94v38h-94z M364 423h94v38h-94z M479 423h94v38h-94z M594 423h94v38h-94z"/>
+</g></g>
+<path d="m20 408 110 -8 34 18 -115 12z m13 22 6 0 -4 60 -5 0z m113 -10 5 0 3 61 -6 0z" fill="#312e28"/>
+<path d="m230 391 110 -8 34 18 -115 12z m13 22 6 0 -4 60 -5 0z m113 -10 5 0 3 61 -6 0z" fill="#312e28"/>
+<path d="m430 382 110 -8 34 18 -115 12z m13 22 6 0 -4 60 -5 0z m113 -10 5 0 3 61 -6 0z" fill="#312e28"/>
+<path d="m110 501 110 -8 34 18 -115 12z m13 22 6 0 -4 60 -5 0z m113 -10 5 0 3 61 -6 0z" fill="#312e28"/>
+<path d="m386 477 110 -8 34 18 -115 12z m13 22 6 0 -4 60 -5 0z m113 -10 5 0 3 61 -6 0z" fill="#312e28"/>
+<rect width="600" height="600" fill="url(#grain)"/></svg>

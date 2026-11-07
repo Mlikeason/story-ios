@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ambient" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <title>Italy, Before the Overture</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#654140"/>
+      <stop offset="1" stop-color="#3d3435"/>
+    </linearGradient>
+    <pattern id="paper" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".53" fill="#37292b" opacity=".16"/>
+    </pattern>
+    <linearGradient id="curtain" x2="0" y2="1">
+      <stop stop-color="#a45c4e"/>
+      <stop offset="1" stop-color="#713e39"/>
+    </linearGradient>
+    <linearGradient id="velvet" x2="0" y2="1">
+      <stop stop-color="#855048"/>
+      <stop offset="1" stop-color="#4d3535"/>
+    </linearGradient>
+    <radialGradient id="pool">
+      <stop stop-color="#edc48a" stop-opacity=".80"/>
+      <stop offset=".48" stop-color="#d3a271" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#d3a271" stop-opacity="0"/>
+    </radialGradient>
+    <g id="seat">
+      <path d="M-12 1q0-12 12-13Q12-12 12 0l-2 6H-9z" fill="#593d3b"/>
+      <path d="M-10-4q7-8 18-3" fill="none" stroke="#97705a" stroke-width="1"/>
+    </g>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      :target .house {animation: house-lights 18s ease-in-out -4s infinite alternate;}
+      :target .footlights {animation: stage-lights 18s ease-in-out -4s infinite alternate;}
+    }
+    @keyframes house-lights {0%,12%{opacity:.97} 85%,100%{opacity:.17}}
+    @keyframes stage-lights {0%,12%{opacity:.38} 85%,100%{opacity:.96}}
+  </style>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <path d="M0 115Q300-42 600 115v40Q300 8 0 155z" fill="#925e4f"/>
+  <path d="M-10 125Q300-39 610 125m-615 11Q300-21 605 136" fill="none" stroke="#bb936c" stroke-width="2.6" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M99 349V146q0-62 201-79 201 17 201 79v203z" fill="#6c4840"/>
+  <path d="M116 347V154q6-50 184-65 171 15 184 65v193z" fill="url(#curtain)"/>
+  <path d="M111 350V150q5-53 189-70 184 17 189 70v200" fill="none" stroke="#bd9767" stroke-width="4" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M129 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M151 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M173 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M195 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M217 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M239 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M261 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M283 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M305 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M327 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M349 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M371 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M393 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M415 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M437 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#7e453d" opacity=".86"/>
+  <path d="M459 140q-6 75-2 130l-4 78h8q-2-68 3-107l1-103z" fill="#885047" opacity=".86"/>
+  <path d="M299 145q3 72-1 125l2 79" fill="none" stroke="#633e38" stroke-width="2.6" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M119 139q31-22 78-26t103-15q90 7 180 39l-2 27q-53-2-71-25-46 18-106-18-55 35-105 20-31 21-78 23z" fill="#803e39"/>
+  <path d="M120 162q46-2 76-22 52 15 105-20 56 35 106 18 32 24 70 24" fill="none" stroke="#c49b6c" stroke-width="2.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M97 116q33-10 57-16 12 74-13 131l-18 23 13 92H95zM503 116q-33-10-57-16-12 74 13 131l18 23-13 92h41z" fill="url(#velvet)"/>
+  <path d="M109 252q10 6 22 0m338 0q12 6 23 0" fill="none" stroke="#c5a26f" stroke-width="3" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <g>
+    <path d="M0 116l86 27v34L0 167z" fill="#654943"/>
+    <path d="M3 127l70 20v19L2 157z" fill="#44393a"/>
+    <path d="M0 154l87 22v10L0 169z" fill="#9b755d"/>
+    <path d="M0 155l88 22" fill="none" stroke="#d0aa78" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="66" cy="145" r="2.5" fill="#f0ca91" opacity="1"/>
+    <path d="M0 173l86 27v34L0 224z" fill="#654943"/>
+    <path d="M3 184l70 20v19L2 214z" fill="#44393a"/>
+    <path d="M0 211l87 22v10L0 226z" fill="#9b755d"/>
+    <path d="M0 212l88 22" fill="none" stroke="#d0aa78" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="66" cy="202" r="2.5" fill="#f0ca91" opacity="1"/>
+    <path d="M0 230l86 27v34L0 281z" fill="#654943"/>
+    <path d="M3 241l70 20v19L2 271z" fill="#44393a"/>
+    <path d="M0 268l87 22v10L0 283z" fill="#9b755d"/>
+    <path d="M0 269l88 22" fill="none" stroke="#d0aa78" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="66" cy="259" r="2.5" fill="#f0ca91" opacity="1"/>
+  </g>
+  <g transform="translate(600) scale(-1 1)">
+    <path d="M0 116l86 27v34L0 167z" fill="#654943"/>
+    <path d="M3 127l70 20v19L2 157z" fill="#44393a"/>
+    <path d="M0 154l87 22v10L0 169z" fill="#9b755d"/>
+    <path d="M0 155l88 22" fill="none" stroke="#d0aa78" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="66" cy="145" r="2.5" fill="#f0ca91" opacity="1"/>
+    <path d="M0 173l86 27v34L0 224z" fill="#654943"/>
+    <path d="M3 184l70 20v19L2 214z" fill="#44393a"/>
+    <path d="M0 211l87 22v10L0 226z" fill="#9b755d"/>
+    <path d="M0 212l88 22" fill="none" stroke="#d0aa78" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="66" cy="202" r="2.5" fill="#f0ca91" opacity="1"/>
+    <path d="M0 230l86 27v34L0 281z" fill="#654943"/>
+    <path d="M3 241l70 20v19L2 271z" fill="#44393a"/>
+    <path d="M0 268l87 22v10L0 283z" fill="#9b755d"/>
+    <path d="M0 269l88 22" fill="none" stroke="#d0aa78" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="66" cy="259" r="2.5" fill="#f0ca91" opacity="1"/>
+  </g>
+  <g class="footlights">
+    <ellipse cx="297" cy="264" rx="142" ry="90" fill="url(#pool)" opacity="0.39"/>
+    <ellipse cx="130" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="130" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="179" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="179" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="229" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="229" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="278" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="278" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="322" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="322" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="372" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="372" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="421" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="421" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="470" cy="344" rx="11" ry="12" fill="url(#pool)" opacity="0.65"/>
+    <circle cx="470" cy="346" r="2" fill="#f2d29b" opacity="1"/>
+    <ellipse cx="73" cy="162" rx="18" ry="16" fill="url(#pool)" opacity="0.75"/>
+    <circle cx="73" cy="162" r="2.6" fill="#f1ca92" opacity="1"/>
+    <ellipse cx="73" cy="219" rx="18" ry="16" fill="url(#pool)" opacity="0.75"/>
+    <circle cx="73" cy="219" r="2.6" fill="#f1ca92" opacity="1"/>
+    <ellipse cx="73" cy="276" rx="18" ry="16" fill="url(#pool)" opacity="0.75"/>
+    <circle cx="73" cy="276" r="2.6" fill="#f1ca92" opacity="1"/>
+    <ellipse cx="527" cy="162" rx="18" ry="16" fill="url(#pool)" opacity="0.75"/>
+    <circle cx="527" cy="162" r="2.6" fill="#f1ca92" opacity="1"/>
+    <ellipse cx="527" cy="219" rx="18" ry="16" fill="url(#pool)" opacity="0.75"/>
+    <circle cx="527" cy="219" r="2.6" fill="#f1ca92" opacity="1"/>
+    <ellipse cx="527" cy="276" rx="18" ry="16" fill="url(#pool)" opacity="0.75"/>
+    <circle cx="527" cy="276" r="2.6" fill="#f1ca92" opacity="1"/>
+  </g>
+  <g class="house">
+    <ellipse cx="48" cy="144" rx="49" ry="39" fill="url(#pool)" opacity="0.8"/>
+    <ellipse cx="48" cy="201" rx="49" ry="39" fill="url(#pool)" opacity="0.8"/>
+    <ellipse cx="48" cy="258" rx="49" ry="39" fill="url(#pool)" opacity="0.8"/>
+    <ellipse cx="552" cy="144" rx="49" ry="39" fill="url(#pool)" opacity="0.8"/>
+    <ellipse cx="552" cy="201" rx="49" ry="39" fill="url(#pool)" opacity="0.8"/>
+    <ellipse cx="552" cy="258" rx="49" ry="39" fill="url(#pool)" opacity="0.8"/>
+    <path d="M113 151q7-55 187-71 176 16 187 71" fill="none" stroke="#e3bc82" stroke-width="2.8" opacity="0.73" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M0 347q303 21 600 0v20q-272 37-600 0z" fill="#a17a5c"/>
+  <path d="M21 351q280 19 562 0" fill="none" stroke="#d4ac7c" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M0 372q300 27 600 0v228H0z" fill="#3c3838"/>
+  <path d="M192 363l12-1 3 6-14 1z" fill="#b59874"/>
+  <path d="M199 369v8" fill="none" stroke="#6b6255" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M242 357l12-1 3 6-14 1z" fill="#b59874"/>
+  <path d="M249 363v8" fill="none" stroke="#6b6255" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M288 361l12-1 3 6-14 1z" fill="#b59874"/>
+  <path d="M295 367v8" fill="none" stroke="#6b6255" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M334 357l12-1 3 6-14 1z" fill="#b59874"/>
+  <path d="M341 363v8" fill="none" stroke="#6b6255" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M382 363l12-1 3 6-14 1z" fill="#b59874"/>
+  <path d="M389 369v8" fill="none" stroke="#6b6255" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#seat" transform="translate(-25 416) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(0 413) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(25 411) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(51 409) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(76 407) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(102 405) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(127 404) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(153 402) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(178 401) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(204 400) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(229 400) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(255 399) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(280 399) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(306 399) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(331 399) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(357 400) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(382 400) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(408 401) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(433 402) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(459 403) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(484 404) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(510 406) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(535 408) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(561 410) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(586 412) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(612 415) scale(0.91 0.91)"/>
+  <use href="#seat" transform="translate(-18 437) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(13 434) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(44 431) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(76 429) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(107 427) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(138 425) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(170 424) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(201 423) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(233 422) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(264 421) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(295 421) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(327 421) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(358 422) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(389 422) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(421 423) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(452 425) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(483 426) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(515 428) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(546 431) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(577 433) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(609 436) scale(1.12 1.12)"/>
+  <use href="#seat" transform="translate(0 465) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(39 462) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(78 459) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(118 456) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(157 454) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(196 453) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(235 452) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(274 451) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(314 451) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(353 451) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(392 452) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(431 454) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(470 456) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(510 458) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(549 461) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(588 464) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(627 468) scale(1.4 1.4)"/>
+  <use href="#seat" transform="translate(-35 508) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(13 503) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(61 499) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(109 496) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(157 493) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(206 491) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(254 490) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(302 490) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(350 490) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(398 492) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(446 493) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(495 496) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(543 499) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(591 504) scale(1.72 1.72)"/>
+  <use href="#seat" transform="translate(0 562) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(56 558) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(112 554) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(168 551) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(224 549) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(280 548) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(336 548) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(392 549) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(448 552) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(504 555) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(560 559) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(616 564) scale(2.0 2.0)"/>
+  <use href="#seat" transform="translate(13 623) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(80 618) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(147 614) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(215 611) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(282 610) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(349 610) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(416 612) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(483 615) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(551 620) scale(2.4 2.4)"/>
+  <use href="#seat" transform="translate(618 626) scale(2.4 2.4)"/>
+  <rect width="600" height="600" fill="url(#paper)"/>
+</svg>

@@ -1,0 +1,11 @@
+Story is an offline field recording player. No account, purchase, test credentials or network connection is required.
+
+On any supported iPhone, tap Play. Lock the device to hear background audio and use the system playback controls. Tap the timer to cycle through Loop, 25, 45 and 60 minutes. Switching recordings or changing the window layout during playback preserves the active deadline. Pause to hold the remaining time; play to resume. The recording fades out over the final ten seconds. Lock Screen artwork follows the current illustrated scene.
+
+On iPhone Duo, a folded landscape cover shows Story, its English tagline, the timer, waveform and playback controls. The portrait cover has a two-part switch for the player and playlist. Unfold to choose the full player or split layout. The split follows the device orientation and uses the space above and below an active horizontal hinge.
+
+The daily recording widget can be added from the widget gallery. Its playback controls require iOS 17 or later. The app and widget use an App Group to share the language preference.
+
+English is the default. Settings and the bottom of the playlist include Write to Story, Report a problem, Help, About Story and Privacy. Settings also offers Simplified Chinese. Help and the author's note are bundled and available offline. The author's website opens in the system browser and requires a connection.
+
+Feedback opens a user-reviewed email draft addressed to zivzhu@gmail.com. The app never sends it automatically. A problem report can optionally include editable recording, timer, playback, app version, device model and system version details. There are no unique device identifiers or listening history attachments. If email is unavailable, users can copy the address and message into their preferred email service.

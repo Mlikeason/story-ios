@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="ambient" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <title>Hokkaido, Snow at Dusk</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#88899a"/>
+      <stop offset="1" stop-color="#ddbbac"/>
+    </linearGradient>
+    <pattern id="paper" width="4" height="4" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r=".53" fill="#514e60" opacity=".16"/>
+    </pattern>
+    <linearGradient id="snow" x2="0" y2="1">
+      <stop stop-color="#d1c6b9"/>
+      <stop offset="1" stop-color="#8c92a1"/>
+    </linearGradient>
+    <g id="windbreak" fill="#767988">
+      <path d="M-1 0l-1-47h2l1 46zm-1-12-10-14 2-2 9 11zm0-12 10-14 1 2-10 15z"/>
+    </g>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      :target .spindrift { animation: drift var(--duration) linear infinite; }
+      :target .ground-snow { animation: ground-drift 6.4s ease-in-out -3s infinite alternate; }
+    }
+    @keyframes drift { to {stroke-dashoffset:var(--length)} }
+    @keyframes ground-drift { from{opacity:.24;transform:translateX(-7px)} to{opacity:.73;transform:translateX(8px)} }
+  </style>
+  <rect width="600" height="600" fill="url(#sky)"/>
+  <circle cx="399" cy="193" r="32" fill="#edcfb2" opacity="0.72"/>
+  <path d="M0 270l77-13 93 6 74-12 58 13 80-6 49 12 95-15 74 3v58H0z" fill="#a49ba4"/>
+  <use href="#windbreak" transform="translate(-21 294) scale(0.64 0.85)"/>
+  <use href="#windbreak" transform="translate(-5 298) scale(0.58 0.78)"/>
+  <use href="#windbreak" transform="translate(15 290) scale(0.58 0.77)"/>
+  <use href="#windbreak" transform="translate(33 295) scale(0.66 0.88)"/>
+  <use href="#windbreak" transform="translate(53 294) scale(0.6 0.81)"/>
+  <use href="#windbreak" transform="translate(75 290) scale(0.78 1.04)"/>
+  <use href="#windbreak" transform="translate(92 297) scale(0.44 0.59)"/>
+  <use href="#windbreak" transform="translate(112 300) scale(0.43 0.57)"/>
+  <use href="#windbreak" transform="translate(126 292) scale(0.39 0.52)"/>
+  <use href="#windbreak" transform="translate(146 300) scale(0.45 0.6)"/>
+  <use href="#windbreak" transform="translate(168 293) scale(0.93 1.24)"/>
+  <use href="#windbreak" transform="translate(185 298) scale(0.67 0.89)"/>
+  <use href="#windbreak" transform="translate(208 297) scale(0.61 0.82)"/>
+  <use href="#windbreak" transform="translate(224 293) scale(0.43 0.58)"/>
+  <use href="#windbreak" transform="translate(246 293) scale(1.12 1.49)"/>
+  <use href="#windbreak" transform="translate(259 294) scale(0.51 0.68)"/>
+  <use href="#windbreak" transform="translate(285 299) scale(0.5 0.67)"/>
+  <use href="#windbreak" transform="translate(299 299) scale(0.45 0.6)"/>
+  <use href="#windbreak" transform="translate(320 296) scale(0.54 0.71)"/>
+  <use href="#windbreak" transform="translate(336 299) scale(0.65 0.87)"/>
+  <use href="#windbreak" transform="translate(360 299) scale(0.55 0.73)"/>
+  <use href="#windbreak" transform="translate(376 294) scale(0.55 0.73)"/>
+  <use href="#windbreak" transform="translate(395 299) scale(1.05 1.4)"/>
+  <use href="#windbreak" transform="translate(412 296) scale(0.69 0.92)"/>
+  <use href="#windbreak" transform="translate(436 298) scale(0.77 1.03)"/>
+  <use href="#windbreak" transform="translate(454 290) scale(0.86 1.14)"/>
+  <use href="#windbreak" transform="translate(470 295) scale(0.98 1.31)"/>
+  <use href="#windbreak" transform="translate(487 294) scale(0.63 0.84)"/>
+  <use href="#windbreak" transform="translate(508 295) scale(0.9 1.2)"/>
+  <use href="#windbreak" transform="translate(530 296) scale(0.97 1.3)"/>
+  <use href="#windbreak" transform="translate(551 295) scale(0.94 1.25)"/>
+  <use href="#windbreak" transform="translate(563 294) scale(0.62 0.83)"/>
+  <use href="#windbreak" transform="translate(587 300) scale(0.47 0.62)"/>
+  <use href="#windbreak" transform="translate(608 290) scale(1.01 1.35)"/>
+  <use href="#windbreak" transform="translate(620 294) scale(0.54 0.71)"/>
+  <path d="M0 292q112-13 210 2t205 0 185-9v315H0z" fill="url(#snow)"/>
+  <path d="M245 272l20-15 72-2 36 17v44l-128 1z" fill="#866e64"/>
+  <path d="M247 272l20-11 13 8v49h-33z" fill="#78675f"/>
+  <path d="M238 274l28-23 77-2 36 20-41 2-58-1-10-7-22 17z" fill="#62646e"/>
+  <path d="M235 271l30-23 78-1 38 19-41 2-58-2-13-8-26 17z" fill="#e1d4c5"/>
+  <rect x="293" y="279" width="30" height="22" fill="#deb588"/>
+  <path d="M309 279v22m-16-9h30" fill="none" stroke="#907966" stroke-width="1.8" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="337" y="275" width="16" height="39" fill="#655f61"/>
+  <rect x="340" y="279" width="10" height="13" fill="#bb9b82"/>
+  <rect x="250" y="286" width="12" height="12" fill="#b5a699"/>
+  <path d="M223 319l157-4 36 6-188 8z" fill="#a69b9b"/>
+  <path d="M180 333l226-9m-93 15 150-10" fill="none" stroke="#b5a5a0" stroke-width="1.2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M-25 569l356-251 5-1-310 255zm82 54 304-303h4L101 627z" fill="#93909a"/>
+  <path d="M19 539l323-220m-209 185 225-183" fill="none" stroke="#f1e0ce" stroke-width="2.1" opacity="0.9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M208 320v-44m-7 10 13-5" fill="none" stroke="#5f636e" stroke-width="3" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M208 277v10m0 11v9" fill="none" stroke="#c7826f" stroke-width="3" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M433 318l1-65m-2 1h22m-9-1v5" fill="none" stroke="#6c6874" stroke-width="2" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="445" cy="259" rx="4" ry="1.8" fill="#d0af91" opacity="1"/>
+  <g class="ground-snow">
+    <path d="M54 375q54-8 92-5m174-9q61-6 110-2m-254 60q52-11 101-9m172-28 63-5" fill="none" stroke="#f5e8d7" stroke-width="2.5" opacity="1" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path d="M-444 -22l970 550 M-420 -128l970 550 M-390 -64l970 550 M-365 -21l970 550 M-342 -23l970 550 M-320 -25l970 550 M-299 -115l970 550 M-273 -69l970 550 M-247 -17l970 550 M-225 -124l970 550 M-199 -10l970 550 M-177 -136l970 550 M-152 -67l970 550 M-125 -68l970 550 M-102 -101l970 550 M-82 -101l970 550 M-59 -32l970 550 M-34 -94l970 550 M-11 -38l970 550 M12 -21l970 550 M43 -126l970 550 M62 -58l970 550 M89 -13l970 550 M111 -94l970 550 M140 -43l970 550 M164 -84l970 550 M186 -89l970 550 M204 -53l970 550 M230 -76l970 550 M260 -19l970 550 M277 -41l970 550 M308 -121l970 550 M328 -96l970 550 M356 -131l970 550 M373 -94l970 550" fill="none" class="spindrift" stroke="#f6eee2" stroke-linecap="round" stroke-width="1.15" stroke-dasharray="2 128" opacity="0.7" style="--duration:3.1s;--length:-130"/>
+  <path d="M-431 -98l970 550 M-409 -92l970 550 M-384 -53l970 550 M-356 -104l970 550 M-333 -67l970 550 M-315 -27l970 550 M-292 -77l970 550 M-261 -10l970 550 M-236 -65l970 550 M-219 -71l970 550 M-189 -16l970 550 M-170 -60l970 550 M-146 -106l970 550 M-121 -90l970 550 M-99 -36l970 550 M-76 -104l970 550 M-51 -73l970 550 M-21 -37l970 550 M-1 -117l970 550 M27 -66l970 550 M51 -82l970 550 M72 -117l970 550 M94 -37l970 550 M121 -112l970 550 M144 -126l970 550 M170 -120l970 550 M190 -7l970 550 M220 -78l970 550 M240 -84l970 550 M261 -66l970 550 M284 -94l970 550 M314 -36l970 550 M333 -70l970 550 M358 -54l970 550 M388 -127l970 550" fill="none" class="spindrift" stroke="#f6eee2" stroke-linecap="round" stroke-width="1.8" stroke-dasharray="3 172" opacity="0.84" style="--duration:3.5s;--length:-175"/>
+  <path d="M-423 -95l970 550 M-400 -115l970 550 M-372 -46l970 550 M-355 -22l970 550 M-330 -104l970 550 M-308 -35l970 550 M-283 -10l970 550 M-254 -84l970 550 M-231 -50l970 550 M-205 -53l970 550 M-182 -120l970 550 M-162 -58l970 550 M-138 -61l970 550 M-113 -112l970 550 M-87 -39l970 550 M-61 -46l970 550 M-39 -62l970 550 M-12 -25l970 550 M11 -29l970 550 M33 -74l970 550 M55 -5l970 550 M82 -136l970 550 M101 -85l970 550 M131 -9l970 550 M156 -111l970 550 M175 -107l970 550 M196 -90l970 550 M222 -116l970 550 M246 -9l970 550 M270 -5l970 550 M292 -71l970 550 M316 -107l970 550 M346 -61l970 550 M369 -8l970 550 M391 -44l970 550" fill="none" class="spindrift" stroke="#f6eee2" stroke-linecap="round" stroke-width="1.5" stroke-dasharray="8 246" opacity="0.69" style="--duration:4.0s;--length:-254"/>
+  <rect width="600" height="600" fill="url(#paper)"/>
+</svg>
