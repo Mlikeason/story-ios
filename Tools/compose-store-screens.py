@@ -16,7 +16,7 @@ def text(draw,at,words,font,color):
     draw.text(at,words,font=font,fill=color,anchor='lt')
 titles={
 'en': [('A travel journal','in sound.'),('50 minutes of rain,','recorded in Changsha.'),('Fall asleep','in another place.'),('Six places','to return to.')],
-'zh': [('一本可以听的','私人旅行手记。'),('在长沙，','录下五十分钟的雨。'),('让一段声音，','陪你慢慢入睡。'),('六个地方，','随时回去听听。')]}
+'zh': [('一本可以听的','私人旅行手记。'),('长沙的一夜','五十分钟的雨。'),('让一段声音','陪你慢慢入睡。'),('六个地方','随时回去听听。')]}
 subs={'en':['WESTERN AUSTRALIA   /   2025','CHANGSHA, CHINA   /   2023','25, 45 OR 60 MINUTES   /   A TEN-SECOND FADE','THE FIELD INDEX   /   ALL SIX RECORDINGS OFFLINE'],
       'zh':['西澳大利亚   /   2025','中国 · 长沙   /   2023','25、45 或 60 分钟   /   最后十秒渐弱','实地录音目录   /   六段声音均可离线收听']}
 files=['01-player.png','02-changsha.png','03-sleep-timer.png','04-playlist.png']

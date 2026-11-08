@@ -19,7 +19,7 @@
       layoutQ: 'Where is the playlist?', layoutA: "On a regular iPhone, use the small playlist button in the side column. On Duo's portrait cover, use the lower half of the layout switch. Unfold Duo to choose the full player or a split view. Portrait and tabletop layouts place the playlist below the scene. Tent mode keeps just the listening controls.",
       languageQ: 'How do I change the language?', languageA: 'Open Settings to choose English or Simplified Chinese. On Duo, unfold the phone to reach Settings. Help and feedback are also at the bottom of the playlist.',
       issueQ: 'What should I include in a problem report?', issueA: 'Tell me what you did, what happened and which recording was playing. Mention whether you used headphones or the speaker, and whether the phone was locked or folded. You can add a screenshot in your email app. If no mail app opens, copy the address and message into your preferred email service.',
-      footer: 'Recorded along the way. Made to listen again.', privacy: 'Privacy policy', about: 'About Story',
+      footer: 'Recorded along the way. Made to listen again.', privacy: 'Privacy policy', about: 'About Story', website: 'Open support website ↗',
       draft: 'Your email app can open this draft. If it does not open, copy the email address and message below.', unavailable: 'No mail app could open. Copy the email address and message into your preferred email service.',
       sent: 'Your message was handed to Mail for sending. Thank you for writing.', cancelled: 'Your message is still here if you want to come back to it.', saved: 'Draft saved in Mail.', failed: 'Mail could not send this message. Your text is still here; you can copy it and try another email app.',
       copiedEmail: 'Email address copied.', copiedMessage: 'Message copied.', copyFailed: 'Could not copy automatically. Select the text and use Copy.',
@@ -39,7 +39,7 @@
       layoutQ: '播放列表在哪里？', layoutA: '普通 iPhone 可以点侧边一列里的小圆播放列表按钮。Duo 竖向外屏使用布局开关的下半部分。展开 Duo 后可选择全屏播放器或分栏；竖向和半折叠上下摆放时，列表会位于场景下方。帐篷模式只保留收听控件。',
       languageQ: '怎么切换语言？', languageA: '在设置中选择 English 或简体中文。使用 Duo 时，展开手机即可找到设置。播放列表底部也能打开帮助与反馈。',
       issueQ: '报告问题时，需要提供什么？', issueA: '告诉我你做了什么、发生了什么，以及当时播放的录音。也可以说明使用耳机还是扬声器，手机是否锁屏或折叠。你可以在邮件里添加截图。若无法打开邮件 App，可以复制邮箱和内容，用常用的邮件服务发送。',
-      footer: '沿途录下，留待重听。', privacy: '隐私声明', about: '关于 Story',
+      footer: '沿途录下，留待重听。', privacy: '隐私声明', about: '关于 Story', website: '在网站上查看 ↗',
       draft: '邮件 App 可以打开这份草稿。若没有打开，请复制下方的邮箱和内容发送。', unavailable: '无法打开邮件 App。你可以复制邮箱和内容，用常用的邮件服务发送。',
       sent: '邮件已交给邮件 App 发送。谢谢你的来信。', cancelled: '内容还留在这里，可以稍后继续。', saved: '草稿已保存在邮件 App。', failed: '邮件未能发送。内容还在，你可以复制后使用其他邮件 App 重试。',
       copiedEmail: '邮箱已复制。', copiedMessage: '内容已复制。', copyFailed: '无法自动复制，请选中文字后使用复制。',
@@ -79,6 +79,7 @@
     $('#details-fields').hidden = !$('#include-details').checked;
     $('#privacy-link').href = 'privacy.html#' + lang;
     $('#about-link').href = 'about.html#' + lang;
+    $('#website-link').href = 'https://zhuhong.me/story/#' + lang;
     status(statusKey);
   }
   function message() {

@@ -294,7 +294,7 @@ async function start() {
     showLibrary(false);
   };
   function openPrivacy() {
-    $('#policy iframe').src = 'privacy.html#' + lang;
+    $('#policy iframe').src = 'privacy.html?embedded=1#' + lang;
     $('#policy').showModal();
   }
   $('#privacy').onclick = openPrivacy;

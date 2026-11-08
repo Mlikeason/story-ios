@@ -25,6 +25,7 @@
 - `Widget/` 与主应用共享录音目录和音频意图。扩展只打包小型 JSON 目录，音频由主应用播放。小组件通过 App Group 读取 App 里选择的语言，默认英文。
 - 设置和播放列表底部提供 Write to Story、报告问题、使用帮助、关于 Story 和隐私入口。`Resources/support.html`、`support.css`、`support.js` 是 App 内离线帮助和网站共用的来源；`about.html` 是中英文作者介绍，并可在系统浏览器中打开个人网站。
 - 反馈先生成可编辑的邮件草稿，用户确认后由邮件 App 发送。问题反馈可选择附带当前录音、定时、播放状态、版本与设备型号，不包含唯一设备标识或收听历史。没有邮件账户时可复制邮箱和内容。反馈文字仅保留在当前页面内存中。
+- 公开支持页使用 `https://zhuhong.me/story/`，介绍与隐私页分别为同目录的 `about.html` 和 `privacy.html`。页面已同步到 Web V2 的 `/Users/hoo/zhuhong-journal/story/`，2026-11-08 已验证正式网址可免登录访问。后续运行 `python3 Tools/package-support-website.py` 更新材料包，再将 `AppStore/website/` 中五个文件复制到 Web V2 的 `story/` 并部署。App 内的「在网站上查看」指向这些网址，并保留离线副本。
 
 ## 验证
 

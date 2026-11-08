@@ -26,6 +26,7 @@ button { min-height: 44px; border: 0; border-radius: 9px; color: inherit; backgr
 details { border-bottom: 1px solid #a8b9a830; }summary { min-height: 52px; padding: 14px 0; font-size: .94rem; }details p { margin: 0 0 20px; color: #bec9bd; font-size: .88rem; }
 footer { margin-top: 40px; }footer a { display: inline-flex; align-items: center; min-height: 44px; }
 [hidden] { display: none !important; }
+html:not([data-embedded]) .app-only { display: none; }
 html[data-embedded] body { padding: 12px 20px 28px; }html[data-embedded] .site-header { display: none; }html[data-embedded] .eyebrow { margin-top: 8px; }html[data-embedded] h1 { font-size: 2rem; }
 html[data-embedded][data-help] .letter { display: none; }html[data-embedded][data-help] .help { margin: 0; padding: 0; border: 0; }
 @media (prefers-reduced-motion: no-preference) { button, select, textarea { transition: background-color .15s; }button:hover { background-color: #304136; }.compose:hover { background-color: #f1e9d4; } }

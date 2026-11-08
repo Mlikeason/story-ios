@@ -1,0 +1,134 @@
+{
+  "status": "submitted-waiting-for-review",
+  "concept": "A personal travel journal in sound",
+  "images": [
+    {
+      "file": "iPhone/en-US/01-personal-journal.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "en-US",
+      "title": "Recordings\nfrom my travels",
+      "description": "Six recordings selected from years of travel.\nI’ll continue adding new recordings."
+    },
+    {
+      "file": "iPhone/en-US/02-changsha-rain.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "en-US",
+      "title": "50\nminutes of rain.",
+      "description": "Recorded under the eaves in Changsha in 2023.\nFifty minutes from that night."
+    },
+    {
+      "file": "iPhone/en-US/03-sleep-timer.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "en-US",
+      "title": "Choose when\nto stop",
+      "description": "Set 25, 45 or 60 minutes.\nThe countdown pauses when playback pauses.\nThe final ten seconds fade out."
+    },
+    {
+      "file": "iPhone/en-US/04-offline-library.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "en-US",
+      "title": "Listen offline",
+      "description": "This first collection is included in the app.\nNew recordings will be added in future updates.\nNo account or ads."
+    },
+    {
+      "file": "Duo/en-US/01-tent-mode.png",
+      "size": [
+        2034,
+        1398
+      ],
+      "language": "en-US",
+      "title": "Cover display\nplayback",
+      "description": "Play, pause and set a timer\nfrom the cover display."
+    },
+    {
+      "file": "Duo/en-US/02-open-display.png",
+      "size": [
+        2007,
+        2853
+      ],
+      "language": "en-US",
+      "title": "Playback across\nboth displays",
+      "description": "Open the phone without stopping the sound or timer.\nChoose a full-screen player or a player with a playlist."
+    },
+    {
+      "file": "iPhone/zh-Hans/01-personal-journal.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "zh-Hans",
+      "title": "历年录音选集\n第一部分",
+      "description": "从这些年的录音里先选出六段。\n之后会持续更新，加入新的声音。"
+    },
+    {
+      "file": "iPhone/zh-Hans/02-changsha-rain.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "zh-Hans",
+      "title": "50\n分钟的夜雨",
+      "description": "2023 年在长沙的屋檐下录制。\n这里收录了那晚五十分钟的雨声。"
+    },
+    {
+      "file": "iPhone/zh-Hans/03-sleep-timer.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "zh-Hans",
+      "title": "设置播放时间",
+      "description": "可选 25、45 或 60 分钟。\n暂停播放时，倒计时也会暂停。\n最后十秒淡出。"
+    },
+    {
+      "file": "iPhone/zh-Hans/04-offline-library.png",
+      "size": [
+        1206,
+        2622
+      ],
+      "language": "zh-Hans",
+      "title": "下载后离线收听",
+      "description": "首批六段录音已收录在 App 中。\n后续会通过更新加入更多录音。\n无需账号，没有广告。"
+    },
+    {
+      "file": "Duo/zh-Hans/01-tent-mode.png",
+      "size": [
+        2034,
+        1398
+      ],
+      "language": "zh-Hans",
+      "title": "帐篷模式\n外屏播放",
+      "description": "横向摆放手机。\n在外屏播放、暂停和设置定时。"
+    },
+    {
+      "file": "Duo/zh-Hans/02-open-display.png",
+      "size": [
+        2007,
+        2853
+      ],
+      "language": "zh-Hans",
+      "title": "展开后继续播放",
+      "description": "声音和睡眠倒计时会继续。\n可选全屏播放，或同时显示播放列表。"
+    }
+  ],
+  "submitted_date": "2026-11-08",
+  "app_version": "1.1",
+  "build": "6",
+  "submission_id": "bcd205f5-266d-44ac-b6b2-ef4e8368a825",
+  "names": {
+    "en-US": "Story: A Sound Journal",
+    "zh-Hans": "声音 Story: 今生不再"
+  }
+}

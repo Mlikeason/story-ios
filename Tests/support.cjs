@@ -3,9 +3,9 @@ const path = require('node:path');
 const { test } = require('node:test');
 const { chromium } = require('playwright');
 
-async function serve(page, root) {
+async function serve(page, root, prefix = '/') {
   await page.route('http://story.test/**', route => {
-    const name = new URL(route.request().url()).pathname.slice(1) || 'index.html';
+    const name = new URL(route.request().url()).pathname.slice(prefix.length) || 'index.html';
     return route.fulfill({ path: path.resolve(root, name) });
   });
 }
@@ -34,6 +34,7 @@ test('feedback from both app entry points preserves playback state and sends onl
     await page.locator('#archive [data-support="problem"]').click();
     const frame = page.frameLocator('#support iframe');
     await frame.getByLabel('What happened?', {exact:true}).waitFor();
+    assert.equal(await frame.locator('#website-link').getAttribute('href'), 'https://zhuhong.me/story/#en');
     await page.waitForFunction(() => document.querySelector('#support iframe').contentDocument.querySelector('#details').value.includes('Sleepless Rain Night'));
     const details = await frame.locator('#details').inputValue();
     assert.match(details, /1\.1 \(5\)/);
@@ -69,6 +70,7 @@ test('feedback from both app entry points preserves playback state and sends onl
     assert.equal(await frame.getByRole('button',{name:'复制邮箱',exact:true}).isVisible(), true);
     await frame.locator('#privacy-link').click();
     await page.frameLocator('#policy iframe').getByRole('heading',{name:'隐私声明',exact:true}).waitFor();
+    assert.equal(await page.frameLocator('#policy iframe').locator('#website-link').getAttribute('href'), 'https://zhuhong.me/story/privacy.html#zh');
     await page.locator('#close-policy').click();
     assert.equal(await page.locator('#support').isVisible(), true);
     await page.locator('#close-support').click();
@@ -112,8 +114,8 @@ test('public support page defaults to English, keeps drafts across language chan
     await page.addInitScript(() => {
       Object.defineProperty(navigator, 'clipboard', {value:{writeText:async text => {window.copied = text;}}});
     });
-    await serve(page, 'AppStore/website');
-    await page.goto('http://story.test/');
+    await serve(page, 'AppStore/website', '/story/');
+    await page.goto('http://story.test/story/');
     assert.equal(await page.locator('html').getAttribute('lang'), 'en');
     await page.locator('#message').fill('A memory & a place + 一段雨声');
     await page.getByRole('link',{name:'简体中文',exact:true}).click();
@@ -131,5 +133,14 @@ test('public support page defaults to English, keeps drafts across language chan
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     }
     assert.equal(await page.locator('#privacy-link').getAttribute('href'), 'privacy.html#zh');
+    assert.equal(await page.locator('#website-link').isVisible(), false);
+    await page.locator('#about-link').click();
+    assert.equal(new URL(page.url()).pathname, '/story/about.html');
+    await page.getByRole('heading',{name:'把那一刻留下来',exact:true}).waitFor();
+    assert.equal(await page.locator('article[lang="zh-Hans"] a').first().getAttribute('href'), 'https://zhuhong.me/');
+    await page.getByRole('link',{name:'写给 Story ↗',exact:true}).click();
+    await page.locator('#privacy-link').click();
+    assert.equal(new URL(page.url()).pathname, '/story/privacy.html');
+    await page.getByRole('heading',{name:'隐私声明',exact:true}).waitFor();
   } finally { await browser.close(); }
 });

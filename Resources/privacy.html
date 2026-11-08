@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Privacy Policy · Story</title>
+  <link rel="canonical" href="https://zhuhong.me/story/privacy.html">
   <style>
     :root { color-scheme: dark; font: 17px/1.6 -apple-system, BlinkMacSystemFont, sans-serif; color: #f5f1e4; background: #172f2a; }
     body { max-width: 40rem; margin: auto; padding: 1.5rem clamp(1rem, 5vw, 3rem) 3rem; }
@@ -14,10 +15,19 @@
     p { margin: .4rem 0; } a { color: #f4d99d; }
     nav a { display: inline-block; padding: .5em; }
     html[lang=en] article[lang=zh-Hans], html[lang=zh-Hans] article[lang=en] { display: none; }
+    html:not([data-embedded]) .app-only { display: none; }
+    footer { margin-top: 2rem; }
   </style>
   <script>
-    function setLanguage() { document.documentElement.lang = location.hash === '#zh' ? 'zh-Hans' : 'en'; }
+    function setLanguage() {
+      const zh = location.hash === '#zh';
+      document.documentElement.lang = zh ? 'zh-Hans' : 'en';
+      document.documentElement.toggleAttribute('data-embedded', new URLSearchParams(location.search).get('embedded') === '1');
+      const link = document.getElementById('website-link');
+      if (link) { link.href = 'https://zhuhong.me/story/privacy.html#' + (zh ? 'zh' : 'en'); link.textContent = zh ? '在网站上查看 ↗' : 'Read on my website ↗'; }
+    }
     setLanguage();
+    document.addEventListener('DOMContentLoaded', setLanguage);
     window.addEventListener('hashchange', setLanguage);
   </script>
 </head>
@@ -47,5 +57,6 @@
     <p>删除 Story 会移除本机偏好。「写给 Story」和问题反馈会打开邮件草稿，只有你选择发送后才会寄出。问题反馈可以包含当前录音、定时和播放状态、App 版本、设备型号及系统版本，你可以编辑或取消附带这些信息。不会附带设备唯一标识或收听历史。</p>
     <p>如果你主动发邮件到 <a href="mailto:zivzhu@gmail.com">zivzhu@gmail.com</a>，收件人会收到你的发件邮箱，以及你选择发送的内容和附件，用于回复请求和改进 Story。你也可以写信到同一地址要求删除来信。复制按钮只会将所选邮箱或草稿写入本机剪贴板。</p>
   </article>
+  <footer class="app-only"><a id="website-link" href="https://zhuhong.me/story/privacy.html#en" target="_blank" rel="noopener noreferrer">Read on my website ↗</a></footer>
 </body>
 </html>
